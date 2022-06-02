@@ -19,3 +19,9 @@ document.querySelector('ol').children[0].style.color = 'DarkOliveGreen'
 // Change the innerText of one of your list items to
 // 'Jamboree sandwich at the Jambo-ree'
 document.querySelector('ol').children[1].innerText = 'Jamboree sandwich at the Jambo-ree'
+// Create a new img element using document.createElement()
+let newImage = document.createElement('img')
+// Add an attribute for the source url of your new image using .setAttribute()
+newImage.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSD3llggbKThvm5DW-BDu_YPOuylq5CK-tqA&usqp=CAU')
+// Append it to your page, somewhere, using .appendChild()
+document.querySelector('#container').appendChild(newImage)
